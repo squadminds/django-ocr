@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="file-upload-section position-relative">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class = "col-md-8">
+       <div class="main-box py-4 px-md-0 px-2 bg-light">
+         <form action = "" method="post" enctype="multipart/form-data">  
+           {% csrf_token %}  
+           <div class="row justify-content-center">
+            <div class="mb-3 col-md-7">
+            
+              <input class="form-control shadow-none  w-md-auto m-auto bg-transparent" type="file" name="image">
+            </div><br>
+            <p class = "fw-bold m-2 text-center">Or</p>
+            <div class="col-md-7">
+            <label for="image-url" class="form-label text-left">Enter Image Url</label>
+            <input class = "form-control  m-auto shadow-none" type="url" name="imageurl" placeholder="Enter Url">
+           
+          </div>
+          <div class="col-md-6 text-center">
+            <button type="submit " class="submit-btn mt-2" id="btn" name = "submit" >Submit</button>
+          </div>
+          </div>
+         </form>
+       </div>
+       
+      </div>
+      <div class="col-md-8 mt-2">
+       
+       {% if text %}
+       {{text}}
+       {% endif %}
+     </div>
+     </div>
+  
+  </div>
+</section>
+
+{% endblock %}

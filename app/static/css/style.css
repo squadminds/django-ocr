@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+body{
+    font-family: 'Alkatra', cursive!important;
+}
+.banner{
+    background: url('/static/images/banner-2.jpg')#dc3545;
+    background-position: center;
+    height:385px;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+}
+
+.main-box{
+
+    box-shadow: 0 0px 42px 0 #41464b80;
+    border: 2px #212529;
+    border-style: dashed;
+
+ } 
+.file-upload-section{
+  bottom: 109px;
+}
+.submit-btn{
+    border-radius: 50px;
+    background: #070404;
+    box-shadow: 20px 20px 49px #d3d3d3, -20px -20px 49px #ededed;
+    color: white;
+    padding: 5px 25px;
+}
